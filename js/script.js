@@ -9,41 +9,41 @@ function mortarcalculator() {
 
     switch (dropdownn) {
         case 'M5-1:5:10':
-            aggregateResult = ((document.getElementById('moratrVolume').value)*(10/16)).toFixed(2) + '&nbsp;'+'ft &sup3;';
-            sandResult = ((document.getElementById('moratrVolume').value*(5/16))).toFixed(2) + '&nbsp;'+'ft &sup3;';
+            aggregateResult = ((document.getElementById('moratrVolume').value)*(10/16)).toFixed(2);
+            sandResult = ((document.getElementById('moratrVolume').value*(5/16))).toFixed(2) ;
             cementResult = ((document.getElementById('moratrVolume').value*(1/16)*(1.52))/1.25).toFixed(2) ;
-            steelResult = ((((document.getElementById('moratrVolume').value))*0.3)*135).toFixed(2);
+            steelResult = ((((document.getElementById('moratrVolume').value)))*115).toFixed(2);
             
             break;
         case 'M7.5-1:4:8':
-            aggregateResult = ((document.getElementById('moratrVolume').value)*(8/13)).toFixed(2) + '&nbsp;'+'ft &sup3;';
-            sandResult = ((document.getElementById('moratrVolume').value*(4/13))) .toFixed(2) + '&nbsp;'+'ft &sup3;';
+            aggregateResult = ((document.getElementById('moratrVolume').value)*(8/13)).toFixed(2) ;
+            sandResult = ((document.getElementById('moratrVolume').value*(4/13))) .toFixed(2) ;
             cementResult = ((document.getElementById('moratrVolume').value*(1/13)*(1.52))/1.25).toFixed(2) ;
-            steelResult = ((((document.getElementById('moratrVolume').value))*0.3)*135).toFixed(2);
+            steelResult = ((((document.getElementById('moratrVolume').value)))*115).toFixed(2);
             break;
             case 'M10-1:3:6':
-            aggregateResult = ((document.getElementById('moratrVolume').value)*(6/10)).toFixed(2) + '&nbsp;'+'ft &sup3;';
-            sandResult = ((document.getElementById('moratrVolume').value*(3/10))).toFixed(2) + '&nbsp;'+'ft &sup3;';
+            aggregateResult = ((document.getElementById('moratrVolume').value)*(6/10)).toFixed(2);
+            sandResult = ((document.getElementById('moratrVolume').value*(3/10))).toFixed(2) ;
             cementResult = ((document.getElementById('moratrVolume').value*(1/10)*(1.52))/1.25).toFixed(2) ;
-            steelResult = ((((document.getElementById('moratrVolume').value))*0.3)*135).toFixed(2);
+            steelResult = ((((document.getElementById('moratrVolume').value)))*115).toFixed(2);
             break;
             case 'M15-1:2:4':
-            aggregateResult = ((document.getElementById('moratrVolume').value)*(4/7)).toFixed(2) + '&nbsp;'+'ft &sup3;';
-            sandResult = ((document.getElementById('moratrVolume').value*(2/7))).toFixed(2) + '&nbsp;'+'ft &sup3;';
+            aggregateResult = ((document.getElementById('moratrVolume').value)*(4/7)).toFixed(2);
+            sandResult = ((document.getElementById('moratrVolume').value*(2/7))).toFixed(2) ;
             cementResult = ((document.getElementById('moratrVolume').value*(1/7)*(1.52))/1.25).toFixed(2);
-            steelResult = ((((document.getElementById('moratrVolume').value))*0.3)*135).toFixed(2);
+            steelResult = ((((document.getElementById('moratrVolume').value)))*115).toFixed(2);
             break;
             case 'M20-1:1.5:3':
-            aggregateResult = ((document.getElementById('moratrVolume').value)*(3/5.5)).toFixed(2) + '&nbsp;'+'ft &sup3;';
-            sandResult = ((document.getElementById('moratrVolume').value*(1.5/5.5))).toFixed(2) + '&nbsp;'+'ft &sup3;';
+            aggregateResult = ((document.getElementById('moratrVolume').value)*(3/5.5)).toFixed(2) ;
+            sandResult = ((document.getElementById('moratrVolume').value*(1.5/5.5))).toFixed(2);
             cementResult = ((document.getElementById('moratrVolume').value*(1/5.5)*(1.52))/1.25).toFixed(2) ;
-            steelResult = ((((document.getElementById('moratrVolume').value))*0.3)*135).toFixed(2);
+            steelResult = ((((document.getElementById('moratrVolume').value)))*115).toFixed(2);
             break;
             case 'M25-1:1:2':
             aggregateResult = ((document.getElementById('moratrVolume').value)*(2/4)).toFixed(2) ;
             sandResult = ((document.getElementById('moratrVolume').value*(1/4))).toFixed(2) ;
             cementResult = ((document.getElementById('moratrVolume').value*(1/4)*(1.52))/1.25).toFixed(2) ;
-            steelResult = ((((document.getElementById('moratrVolume').value))*0.3)*135).toFixed(2);
+            steelResult = ((((document.getElementById('moratrVolume').value)))*115).toFixed(2);
             break;
             
     }

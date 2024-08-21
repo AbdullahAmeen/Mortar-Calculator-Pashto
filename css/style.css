@@ -31,9 +31,9 @@ output {
 
 input,
 input::placeholder {
-    font-size: 14px;
-    padding: 0;
+    font-size: 15px;
     padding-left: 2px;
+    color: rgb(62, 61, 60);
 }
 
 .aggregateCementSand{
