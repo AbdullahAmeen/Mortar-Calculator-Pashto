@@ -25,15 +25,16 @@ output {
     margin-left: 80px;
     border: 1.5px solid rgb(0, 0, 0);
     border-radius: 3px;
+  
    
 
 }
 
 input,
 input::placeholder {
-    font-size: 15px;
+    font-size: 12px;
     padding-left: 2px;
-    color: rgb(62, 61, 60);
+    color: rgb(6, 6, 6);
 }
 
 .aggregateCementSand{

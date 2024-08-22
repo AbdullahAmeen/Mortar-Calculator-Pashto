@@ -16,16 +16,16 @@
                 </div>
                 <br>
                 <div class="AreaDimension">
-                    <h3>د کانکریټی موادو او سیخ ګول محاسبه </h3>
+                    <h3>د کانکریټ د اجزاو محاسبه </h3>
                     <p>مهرباني وکړئ د هغه ساحې ابعاد چمتو کړئ چې تاسو یی کانکریټ کول غواړئ</p>
                 </div>
                     <form id="calculationForm">
                         <label for="a">عرض (متر)  </label>&nbsp
-                        &nbsp; &nbsp;<input type="number" id="a"value=""> <p></p>   
-                        <label for="b">اوږدوالی (متر)</label>
-                        <input type="number" id="b" value=""><p></p>
+                        &nbsp; &nbsp;<input type="number" id="a"value="" placeholder=" 0  -  9"> <p></p>   
+                        <label for="b" >اوږدوالی (متر)</label>
+                        <input type="number" id="b" value="" placeholder=" 0  -  9"><p></p>
                         <label for="c">لوړوالی (متر)</label>
-                        &nbsp;<input type="number" id="c" value=""><br><br>
+                        &nbsp;<input type="number" id="c" value="" placeholder=" 0  -  9"><br><br>
                         <button type="button" onclick="calculate()" class="submitbutton">محاسبه </button> 
                         <output id="result"></output>    
                     </form>        
@@ -39,7 +39,7 @@
                 <p>Select your concrete Mark or Grade to determine how much Aggregate, Sand and Cement you'll need. </p>
                 <label for="">Concrete Mark</label>
                 <select  id="ConcreteMarks" onchange="mortarcalculator()">
-                    <option value="" disabled selected >دکانکریټ مارک دلته</option>
+                    <option id="palceholder" value="" disabled selected >دکانکریټ مارک دلته</option>
                     <option id="M5">M5-1:5:10</option>
                     <option id="M7">M7.5-1:4:8 </option>
                     <option id="10">M10-1:3:6</option>
@@ -57,7 +57,7 @@
                 <p class="aggregateCementSand">سیخ: <small class="smallfonts"> ( کیلوګرام) </small><span id="steelResult"></span></p>
             </div>      
         </div><br><br>
-        <p>داکمیتونه یا مقدارونه یو تخمین ده کیدای شی چی ستاسو تخمین فرق ولری </p>
+        <p style="text-align: right;">داکمیتونه یا مقدارونه یو براورد ده کیدای شی چی ستاسو براورد فرق ولری </p>
 
                         <div class="concreteMarkExplaination">
                         
