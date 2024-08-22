@@ -37,7 +37,7 @@ function mortarcalculator() {
             aggregateResult = ((document.getElementById('moratrVolume').value)*(3/5.5)).toFixed(2) ;
             sandResult = ((document.getElementById('moratrVolume').value*(1.5/5.5))).toFixed(2);
             cementResult = ((document.getElementById('moratrVolume').value*(1/5.5)*(1.52))/0.035).toFixed(2) ;
-            steelResult = ((((document.getElementById('moratrVolume').value)))*115).toFixed(2);
+            steelResult = ((((document.getElementById('moratrVolume').value)))*105).toFixed(2);
             break;
             case 'M25-1:1:2':
             aggregateResult = ((document.getElementById('moratrVolume').value)*(2/4)).toFixed(2) ;
