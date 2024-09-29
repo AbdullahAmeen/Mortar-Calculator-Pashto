@@ -31,13 +31,13 @@
                     </form>        
                 <hr>
 
-                <div style="text-align: center;">
-                    <p>Enter the dry mortar volume in the below box</p>
+                <div >
+                    <p class="drymortar">دوچو مواده حجم لاندی ولیکی</p>
                     <input type="number" id="moratrVolume" placeholder= "د وچو  موادو  حجم  دلته">
                 </div> <br>
                 
-                <p>Select your concrete Mark or Grade to determine how much Aggregate, Sand and Cement you'll need. </p>
-                <label for="">Concrete Mark</label>
+                <p>د کانکریټ مارک یا درجه اننخاب کړی ترڅو معلومه کړئ چې څومره سمنټ، ریګ او جغل ته اړتیا لرئ </p>
+                <label for="">د کانکریټ مارک</label>
                 <select  id="ConcreteMarks" onchange="mortarcalculator()">
                     <option id="palceholder" value="" disabled selected >دکانکریټ مارک دلته</option>
                     <option id="M5">M5-1:5:10</option>
@@ -55,15 +55,17 @@
                 <p class="aggregateCementSand">ریګ: <small class="smallfonts"> (  متر مکعب ) </small><span id="sandResult"></span></p>
                 <p class="aggregateCementSand">سمنت: <small class="smallfonts"> (کیلو بوجی ۵۰) </small><span id="cementResult"></span></p>
                 <p class="aggregateCementSand">سیخ: <small class="smallfonts"> ( کیلوګرام) </small><span id="steelResult"></span></p>
+                <p class="aggregateCementSand">اوبه: <small class="smallfonts"> ( لیتر) </small><span id="waterResult"></span></p>
             </div>      
         </div><br><br>
         <p style="text-align: right;">داکمیتونه یا مقدارونه یو براورد ده کیدای شی چی ستاسو براورد فرق ولری </p>
 
                         <div class="concreteMarkExplaination">
                         
-                            <p style="text-align: left;"><span style="color:rgb(79, 79, 233); font-size:18px"><b>نوټ:</b> </span>
+                            <p style="text-align: right;"><span style="color:rgb(79, 79, 233); font-size:18px"><b>نوټ:</b> </span>
                                 .د کانکریټو درجه یا د کانکریټ مارک د کانکریټو قوت او جوړښت ته اشاره کوي او هغه حد اقل قوت دی چې باید له جوړیدو څخه ۲۸ ورځې وروسته ولري
-دام ټکی دلته میکس ته اشاره کوی او هغه نمبر د کانکریتو مقاومت ښی پس له ۲۸ ورځونه په نیوټن فی میلی متر مربع کی </p>
+دام ټکی دلته میکس ته اشاره کوی او هغه نمبر د کانکریتو مقاومت ښی پس له ۲۸ ورځونه په نیوټن فی میلی متر مربع کی
+</p>
                         </div> <br>
        
     </div>

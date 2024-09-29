@@ -25,9 +25,12 @@ output {
     margin-left: 80px;
     border: 1.5px solid rgb(0, 0, 0);
     border-radius: 3px;
-  
-   
+    text-align: center;
+}
 
+.drymortar{
+    
+    margin-right: -75px;
 }
 
 input,
@@ -63,6 +66,11 @@ input::placeholder {
 
 #steelResult{
     color:rgb(36, 71, 245);
+}
+
+#waterResult{
+    color: rgb(36, 71, 245);
+
 }
 .mortarItems{
 
