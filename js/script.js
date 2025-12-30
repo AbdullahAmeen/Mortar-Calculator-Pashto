@@ -99,7 +99,7 @@ function calculateMaterials() {
         return;
     }
     if (isNaN(moratrVal) || moratrVal <= 0) {
-        if (errEl) { errEl.innerText = 'مهرباني وکړئ لومړی ساحه محاسبه کړئ او یا د وچو موادو حجم ارایه کړئ'; errEl.style.display = 'block'; }
+        if (errEl) { errEl.innerText = 'مهرباني وکړئ لومړی ساحه محاسبه کړئ او یاد وچو موادو حجم ارایه کړئ'; errEl.style.display = 'block'; }
         return;
     }
 
