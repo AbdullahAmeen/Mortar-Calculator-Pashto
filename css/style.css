@@ -3,11 +3,13 @@
 #ConcreteMarks{
     text-align: center;
     border: 1.5px solid rgb(1, 0, 0);
-    width: 155px;
-    height: 30px;
+    width: 165px;
+    height: 35px;
     background-color: rgb(251, 248, 248);
     border-radius: 2px;
-    font-size: 15px;
+    font-size: 13px;
+    margin-left: 0px;
+    box-shadow: 1px 1px 3px rgba(0,0,0);
      
 }
 
@@ -21,17 +23,19 @@ output {
 }
 
 #moratrVolume{
-    width: 178px;
-    height: 28px;
-    margin-left: 80px;
+    width: 160px;
+    height: 35px;
+    margin-left: 0px;
     border: 1.5px solid rgb(0, 0, 0);
     border-radius: 3px;
-    text-align: center;
+
 }
 
 .drymortar{
     
-    margin-right: -75px;
+    margin-right: 0px;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 input {
@@ -41,16 +45,19 @@ input {
     align-items: center;
     text-align: right;
     height: 35px;
+    box-shadow: 1px 1px 3px rgba(0,0,0);
 }
 
 input::placeholder {
     color: rgb(177, 175, 175);
+    
 }
 
 .aggregateCementSand{
     font-size: 16px;
     font-weight: bold;
     margin-left: 25px;
+    margin-top: 15px;
 }
 
 #aggregateResult{
@@ -80,10 +87,14 @@ input::placeholder {
 
 }
 .mortarItems{
-
     display: none;
-    padding-right: 30px;
-    text-align: right;
+    padding-right: 20px;
+    border: 1px solid rgb(255, 254, 254);
+    border-radius: 5px;
+    margin-left: 90px;
+    margin-right: 90px;
+    background-color: rgb(134, 188, 238);
+    box-shadow: 2.5px 2.5px 5px rgba(0,0,0);
 }
 
 /* inline error shown under the calculate materials button */
@@ -92,18 +103,18 @@ input::placeholder {
     color: #b00020;
     text-align: center;
     margin-top: 15px;
-    margin-left: 75px;
+    margin-left: 0px;
     font-size: 14px;
 }
 
 .concreteMarkExplaination{
-    border: 1px solid yellow;
+    border: 1px solid rgb(255, 255, 255);
     padding: 5px;
     border-radius: 5px;
     font-size: 11px;
     margin-left: 15px;
     margin-right: 15px;
-    box-shadow: 2.5px 2.5px 6px rgba(0,0,0,0.08);
+    box-shadow: 1.7px 1.7px 3px rgba(0,0,0);
 }
 .submitbutton{
     width:80px;
@@ -113,7 +124,7 @@ input::placeholder {
     padding: 3px;
     border-radius: 15px;
     text-align: center;
-    margin-left: 100px;
+    margin-left: 0px;
     
 }
 #result{
@@ -129,7 +140,7 @@ input::placeholder {
     color: #b00020;
     font-weight: 700;
     font-size: 14px;
-    margin-left: 70px;
+    margin-left: 0px;
 }
 
 
@@ -146,8 +157,9 @@ input::placeholder {
 }
 
 .factor{
-    color: rgb(199, 50, 100);
+    color: rgb(245, 0, 0);
     font-size: 20px;
+    text-align:center ;
 }
 #calcMaterialsBtn{
     background-color:rgb(36, 33, 33) ;
@@ -159,4 +171,27 @@ input::placeholder {
     margin-top: 25px;
     width: 150px;
     font-weight: 400;
+}
+
+.bodypage{
+    border: 2px solid black;
+    box-shadow: 2.5px 2.5px 10px rgb(78, 78, 73);
+    margin: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.hrline{
+    background-color: rgb(253, 251, 251);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mortarvolume{
+    text-align: center;
+}
+
+.image{
+    box-shadow: 2.1px 2.1px 8px rgba(0,0,0);
+    border-radius: 5px;
 }
