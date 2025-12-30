@@ -71,6 +71,43 @@ function calculate() {
     var length = parseFloat(document.getElementById('b').value);
     var height = parseFloat(document.getElementById('c').value);
 
-    var total = (width * length * height) * 1.3;
-    document.getElementById('result').value = total.toFixed(2) +'  m3'  + ' (30٪ اضافه شول)' ;
+    var resultEl = document.getElementById('result');
+
+    // Validate inputs: ensure values are numbers and greater than zero
+    if (isNaN(width) || isNaN(length) || isNaN(height) || width <= 0 || length <= 0 || height <= 0) {
+        resultEl.value = 'مهربانی وکړی د کانکریتو عرض، طول او لوړوالی په مثبت نمبر اضافه کړی';
+        resultEl.classList.add('error-message');
+        return;
     }
+
+    resultEl.classList.remove('error-message');
+    var total = (width * length * height) * 1.3;
+    resultEl.innerHTML = total.toFixed(2) + '  m3'  + ' ( <b class="factor"> دیرش</b> فیصده اضافه شول )';
+
+    // populate the moratrVolume input with computed volume so material calculator can use it
+    var moratrEl = document.getElementById('moratrVolume');
+    if (moratrEl) moratrEl.value = total.toFixed(2);
+}
+
+function calculateMaterials() {
+    var selectedMark = document.getElementById('ConcreteMarks').value;
+    var moratrVal = parseFloat(document.getElementById('moratrVolume').value);
+    var errEl = document.getElementById('materialsError');
+
+    if (!selectedMark) {
+        if (errEl) { errEl.innerText = 'مهرباني وکړئ د کانکریټ مارک انتخاب کړئ'; errEl.style.display = 'block'; }
+        return;
+    }
+    if (isNaN(moratrVal) || moratrVal <= 0) {
+        if (errEl) { errEl.innerText = 'مهرباني وکړئ لومړی ساحه محاسبه کړئ او یا د وچو موادو حجم ارایه کړئ'; errEl.style.display = 'block'; }
+        return;
+    }
+
+    // clear inline error
+    if (errEl) { errEl.innerText = ''; errEl.style.display = 'none'; }
+
+    // compute and show materials
+    mortarcalculator();
+    var mortarDiv = document.querySelector('.mortarItems');
+    if (mortarDiv) mortarDiv.style.display = 'block';
+}
