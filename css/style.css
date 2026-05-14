@@ -57,6 +57,8 @@ input::placeholder {
     font-weight: bold;
     margin-left: 25px;
     margin-top: 15px;
+    text-align: center;
+    margin: 15px auto;
 }
 
 #aggregateResult{
@@ -85,8 +87,13 @@ input::placeholder {
     color: rgb(250, 246, 5);
 
 }
+.aggregatequantities{
+    display: none !important;
+}
+
 .mortarItems{
-    display:flex;
+    display: none !important;
+    flex-direction: column;
     padding-right: 15px;
     color: rgb(255, 254, 254);
     border: 1px solid rgb(255, 254, 254);
@@ -94,6 +101,7 @@ input::placeholder {
     width: 60%;
     background: rgb(1, 24, 54);
     box-shadow: 0 3px 8px rgba(48, 47, 46, 0.6), 0 12px 25px rgba(14, 13, 13, 0.4);
+    margin: 0 auto;
 }
 
 /* inline error shown under the calculate materials button */
@@ -213,7 +221,3 @@ input::placeholder {
     letter-spacing: 0.5px;
 }
 
-.aggregatequantities{
-    display: flex;
-    justify-content: center;
-}

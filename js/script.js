@@ -107,6 +107,8 @@ function calculateMaterials() {
 
     // compute and show materials
     mortarcalculator();
+    var aggregateDiv = document.querySelector('.aggregatequantities');
+    if (aggregateDiv) aggregateDiv.style.setProperty('display', 'block', 'important');
     var mortarDiv = document.querySelector('.mortarItems');
-    if (mortarDiv) mortarDiv.style.display = 'block';
+    if (mortarDiv) mortarDiv.style.setProperty('display', 'flex', 'important');
 }
