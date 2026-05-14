@@ -81,7 +81,7 @@ function calculate() {
 
     resultEl.classList.remove('error-message');
     var total = (width * length * height) * 1.2; // adding 20% wastage factor
-    resultEl.innerHTML = total.toFixed(2) + '  m3'  + ' ( <b class="factor"> شل</b> فیصده اضافه شول )';
+    resultEl.innerHTML = '<div class="result-box">' + total.toFixed(2) + '  m3' + '( <b class="factor"> شل</b> فیصده اضافه شول )' + '</div>';
 
     // populate the moratrVolume input with computed volume so material calculator can use it
     var moratrEl = document.getElementById('moratrVolume');
